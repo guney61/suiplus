@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sui Plus</title>
+    
+    <link rel="stylesheet" href="/assets/index-2de5f11b.css">
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="/assets/suiplus-615faa23.png" alt="suiplus logo" />
+        <span>Sui</span>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#games">GAMES</a></li>
+          <li><a href="#rent">RENT</a></li>
+          <li><a href="#listings">LISTINGS</a></li>
+          <li><a href="#pricing">PRICING</a></li>
+          <li><a href="#docs">DOCS</a></li>
+          <li><a href="#help-center">HELP CENTER</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-toggle" id="menuToggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="right-controls">
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." />
+          <button type="submit">🔍</button>
+        </div>
+        <button class="connect-btn" id="connectBtn">Connect Wallet</button>
+
+        <div class="user-area hidden" id="userArea">
+          <div class="avatar">🧿</div>
+          <div class="address-chip">
+            <span id="addrShort">0x123...abc</span>
+          </div>
+          <div class="caret">▾</div>
+
+          <!-- Dropdown panel -->
+          <div class="user-menu" id="userMenu" role="menu" aria-hidden="true">
+            <div class="user-menu-header">
+              <span class="label">Connected</span>
+              <span class="addr-full" id="addrFull">0x…</span>
+            </div>
+            <button class="menu-item" data-action="profile">Profile</button>
+            <button class="menu-item" data-action="activity">Activity</button>
+            <button class="menu-item" data-action="settings">
+              Account Settings
+            </button>
+            <button class="menu-item" data-action="support">Support</button>
+            <hr />
+            <button class="menu-item" data-action="copy">Copy Address</button>
+            <button class="menu-item danger" data-action="logout">
+              Log Out
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Build the Future with Sui</h1>
+        <p>zkLogin • Walrus • Rent powered by the next-gen Web3 ecosystem</p>
+        <button class="primary-btn">Explore dApp</button>
+      </div>
+    </section>
+
+    <section id="games" class="games-hero">
+      <h2 class="section-title">Games</h2>
+      <p>Discover a variety of games built on the Sui platform.</p>
+
+      <!-- DİKEY GRID: 'vertical' sınıfı ÖNEMLİ -->
+      <div class="game-hero-grid vertical">
+        <!-- 1) Suicide Loop — featured -->
+        <article class="gh-card v featured">
+          <div
+            class="gh-media"
+            style="background-image: url('/assets/suicide-loop-ee008cc1.jpg')"
+          ></div>
+          <span class="gh-badge">New</span>
+          <div class="gh-content">
+            <div class="gh-title">
+              <div class="gh-title">
+                <span class="sui-gradient">Sui</span>cide Loop
+              </div>
+            </div>
+            <div class="gh-meta">Psychological • Narrative • Time-loop</div>
+            <div class="gh-actions">
+              <button
+                class="primary-btn big"
+                onclick="location.hash='#active-games'"
+              >
+                Play
+              </button>
+              <button class="btn-ghost" onclick="alert('Suicide Loop details')">
+                Details
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2) Foundry -->
+        <article class="gh-card v">
+          <div
+            class="gh-media"
+            style="background-image: url('/assets/foundry-b6fcee4e.jpg')"
+          ></div>
+          <span class="gh-badge">Active</span>
+          <div class="gh-content">
+            <div class="gh-title">Foundry</div>
+            <div class="gh-meta">Base-building • Strategy</div>
+            <div class="gh-actions">
+              <button
+                class="primary-btn big"
+                onclick="location.hash='#active-games'"
+              >
+                Play
+              </button>
+              <button class="btn-ghost" onclick="alert('Foundry details')">
+                Details
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3) Puffin Raiders -->
+        <article class="gh-card v">
+          <div
+            class="gh-media"
+            style="background-image: url('/assets/puffin-f2c82095.jpg')"
+          ></div>
+          <span class="gh-badge">Active</span>
+          <div class="gh-content">
+            <div class="gh-title">Puffin Raiders</div>
+            <div class="gh-meta">Action • Rogue-lite</div>
+            <div class="gh-actions">
+              <button
+                class="primary-btn big"
+                onclick="location.hash='#active-games'"
+              >
+                Play
+              </button>
+              <button class="btn-ghost" onclick="alert('Puffin details')">
+                Details
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="rent" class="section rent-section">
+      <h2>Rent</h2>
+      <p>
+        Players can securely rent out or borrow in-game items across supported
+        titles on Sui. Flexible durations, instant access, fully on-chain.
+      </p>
+
+      <div class="rent-wrap container">
+        <!-- How it works -->
+        <div class="rent-how">
+          <div class="how-card">
+            <div class="how-ico">🧿</div>
+            <div class="how-title">Connect Your Wallet</div>
+            <div class="how-txt">
+              Sign in with zkLogin or a wallet; review permissions and terms.
+            </div>
+          </div>
+          <div class="how-card">
+            <div class="how-ico">🎮</div>
+            <div class="how-title">Find / List Items</div>
+            <div class="how-txt">
+              Search and filter what you need, or list your asset with a daily
+              price.
+            </div>
+          </div>
+          <div class="how-card">
+            <div class="how-ico">⚡</div>
+            <div class="how-title">Use Instantly</div>
+            <div class="how-txt">
+              Items are active for the rental period and return automatically
+              when time ends.
+            </div>
+          </div>
+        </div>
+
+        <!-- Marketplace -->
+        <div class="rent-market">
+          <div class="rent-toolbar">
+            <input
+              id="rentSearch"
+              class="rent-input"
+              type="text"
+              placeholder="Search items or games..."
+            />
+            <select id="rentGameFilter" class="rent-select">
+              <option value="">All games</option>
+            </select>
+            <button class="primary-btn small" id="listItemBtn">
+              List your item
+            </button>
+          </div>
+
+          <div id="rentGrid" class="rent-grid"><!-- cards via JS --></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="listings" class="section">
+      <h2>Listings</h2>
+      <p>
+        Lease digital assets and pay only for what you use — fast, secure, fair.
+      </p>
+      <button class="secondary-btn">Start Renting</button>
+    </section>
+    <section id="pricing" class="section">
+      <h2>Pricing</h2>
+      <p>Flexible pricing plans to suit your needs.</p>
+      <button class="secondary-btn">View Pricing</button>
+    </section>
+
+    <section id="docs" class="section">
+      <h2>Documentation</h2>
+      <p>Learn how to deploy, integrate and scale your dApp on Sui Network.</p>
+      <button class="secondary-btn">Read Docs</button>
+    </section>
+    <section id="help-center" class="section">
+      <h2>Help Center</h2>
+      <p>Learn how to deploy, integrate and scale your dApp on Sui Network.</p>
+      <button class="secondary-btn">Read Docs</button>
+    </section>
+
+    <section id="profile" class="profile hidden">
+      <!-- Banner -->
+      <div class="pf-banner"></div>
+
+      <!-- Header row -->
+      <div class="pf-header container">
+        <div class="pf-user">
+          <div class="pf-avatar">🧿</div>
+          <div>
+            <div class="pf-name">RURO</div>
+            <div class="pf-sub">
+              <span id="pfAddr">0x7b1f...C001</span>
+              <button class="pf-copy" id="pfCopy">Copy</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pf-stats">
+          <div class="stat">
+            <span class="v" id="pfGames">12</span><span class="k">Games</span>
+          </div>
+          <div class="stat">
+            <span class="v" id="pfRents">7</span><span class="k">Rents</span>
+          </div>
+          <div class="stat">
+            <span class="v" id="pfListings">3</span
+            ><span class="k">Listings</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="pf-tabs container" id="pfTabs">
+        <button class="pf-tab active" data-tab="overview">Overview</button>
+        <button class="pf-tab" data-tab="active-games">Active Games</button>
+        <button class="pf-tab" data-tab="rented-items">Rented Items</button>
+        <button class="pf-tab" data-tab="listings">Listings</button>
+        <button class="pf-tab" data-tab="activity">Activity</button>
+        <button class="pf-tab" data-tab="billing">Billing</button>
+      </div>
+
+      <!-- Panels -->
+      <div class="container pf-panels">
+        <!-- Overview -->
+        <div class="pf-panel" data-panel="overview">
+          <div class="pf-grid">
+            <div class="pf-card">
+              <div class="card-title">Active Games</div>
+              <ul class="mini-list" id="pfPlaying">
+                <li>foundry</li>
+                <li>Puffin</li>
+                <li>Plasma Run</li>
+              </ul>
+            </div>
+            <div class="pf-card">
+              <div class="card-title">Recently Rented</div>
+              <ul class="mini-list" id="pfRecent">
+                <li>+9 RAPTOR</li>
+                <li>Vortex Blade</li>
+                <li>Sui Cap (Golden)</li>
+              </ul>
+            </div>
+            <div class="pf-card">
+              <div class="card-title">Plan</div>
+              <div class="plan">
+                <div class="plan-name">Plus Monthly</div>
+                <div class="plan-meta">10 game slots • renews in 12 days</div>
+                <button class="secondary-btn small" id="managePlan">
+                  Manage
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Active Games -->
+        <div class="pf-panel hidden" data-panel="active-games">
+          <div class="pf-grid pf-cards" id="pfGamesGrid">
+            <!-- cards doldurulacak -->
+          </div>
+        </div>
+
+        <!-- Rented Items -->
+        <div class="pf-panel hidden" data-panel="rented-items">
+          <table class="pf-table" id="pfRentedTable">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Game</th>
+                <th>Expires</th>
+                <th>Cost</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <!-- Listings -->
+        <div class="pf-panel hidden" data-panel="listings">
+          <table class="pf-table" id="pfListingsTable">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Game</th>
+                <th>Price/day</th>
+                <th>Duration</th>
+                <th>State</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <button class="primary-btn" id="newListing">New Listing</button>
+        </div>
+
+        <!-- Activity -->
+        <div class="pf-panel hidden" data-panel="activity">
+          <ul class="activity" id="pfActivity">
+            <!-- satırlar doldurulacak -->
+          </ul>
+        </div>
+
+        <!-- Billing -->
+        <div class="pf-panel hidden" data-panel="billing">
+          <div class="pf-card">
+            <div class="card-title">Subscription</div>
+            <div class="plan">
+              <div class="plan-name">Plus Monthly</div>
+              <div class="plan-meta">Next charge 12 SUI on 2025-11-28</div>
+              <div class="plan-row">
+                <button class="secondary-btn small" id="upgrade">
+                  Upgrade
+                </button>
+                <button class="secondary-btn small danger" id="cancel">
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Sui Web3 Project • Built with 💜 on Sui Network 💧</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
