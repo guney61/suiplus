@@ -1,0 +1,32 @@
+{
+  "name": "rainbowkit-web3-app",
+  "version": "1.0.0",
+  "description": "A web application utilizing RainbowKit for wallet connections.",
+  "main": "src/main.tsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "rainbowkit": "^0.1.0",
+    "wagmi": "^0.1.0",
+    "ethers": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "vite": "^2.0.0",
+    "eslint": "^7.0.0",
+    "eslint-plugin-react": "^7.0.0"
+  },
+  "keywords": [
+    "web3",
+    "wallet",
+    "rainbowkit",
+    "react"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
